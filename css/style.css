@@ -1,6 +1,9 @@
 /* FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Playfair+Display&family=Poppins&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@600;700&display=swap');
+
 
 /* GENERAL STYLES */
 * {
@@ -10,6 +13,10 @@
     list-style: none;
     font-family: 'Poppins', sans-serif;
     max-width: 100%;
+}
+
+body {
+    background-color: var(--alt-white);
 }
 
 /* COLORS */
@@ -23,7 +30,7 @@
 /* GRID */
 .gridContainer {
     display: grid;
-    grid-template-columns: 2fr 8fr 2fr;
+    grid-template-columns: 1fr 8fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas: 
     "header   header   header"
@@ -42,10 +49,14 @@
     align-items: center;
     gap: 5px;
     padding: 5px;
+    height: 49px;
 }
 
 .headerStyle span {
-    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: var(--alt-blue);
 }
 
 .headerStyle .dividerHeader {
@@ -64,8 +75,9 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
-    padding: 5px;
-    box-shadow: 0 3px 6px -6px black;
+    padding: 100px 0px;
+    height: 125px;
+    background-color: var(--alt-white);
 }
 
 /* NAV PT.1 > BRANDING */
@@ -74,42 +86,43 @@
     align-items: center;
 }
 
-.firstColumn {
-    width: 1600px;
-    display: flex;
-    justify-content: center;
-}
-
 .logoImg {
-    width: 17.97vw;
+    width: 229px;
+    height: 58px;
+    opacity: 0.6;
 }
 
 .secondColumn {
-    width: 400px;
+    position: absolute;
+    left: 85%;
+    top: 10%;
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    gap: 42px;
 }
 
 .socialImg {
-    width: 2.5vw;
+    width: 32px;
+}
+
+.correo {
+    position: absolute;
+    top: 13%;
 }
 
 /* NAV PT.2 > MENU */
 .navLinks {
     display: flex;
     gap: 40px;
+    padding-top: 20px;
 }
 
 .navLinks li a {
-    color: var(--alt-black);
+    font-family: 'Poppins', sans-serif;
+    color: var(--alt-blue);
     padding: 10px;
-    border-radius: 5px;
-}
-
-.navLinks li:hover a:hover {
-    background-color: var(--alt-blue);
-    color: var(--alt-white);
+    text-decoration: none;
+    size: 18px;
+    font-weight: 600;
 }
 
 /* CAROUSEL */
@@ -124,70 +137,98 @@
     grid-area: section;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
 .sectionStyle .h1Style h1 {
     display: flex;
     text-align: center;
-    font-size: 42px;
-    font-weight: 500;
-    padding: 70px 0px;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 600;
+    padding: 70px 150px;
+    font-family: 'Lora', serif;
+    line-height: 45.5px;
+    color: var(--alt-blue);
+}
+
+.boxMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 80px;
 }
 
 .boxContent {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    padding: 10px 0px;
-    gap: 20px;
+    padding: 0px;
+    gap: 190px;
 }
 
-.cuadradoImg {
-    width: 500px;
+.boxContent img {
+    width: 609px;
+    height: 423px;
 }
 
 .textImg {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 16px;
     text-align: center;
-    padding: 0px 0px;
-    width: 500px;
+    font-family: 'Lora', serif;
+    height: 171px;
+    width: 442px;
 }
 
-.titleImg {
-    font-size: 24px;
+.textImg h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 45px;
+}
+
+.textImg span {
+    font-style: normal;
     font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    font-family: 'Poppins', sans-serif;
+    color: #4B5563;
 }
 
 .textImg a {
     color: var(--alt-black);
     text-decoration: none;
     font-weight: bold;
+    padding: 10px 20px;
+    color: var(--alt-blue);
 }
 
-.boxContentDouble {
-    display: flex;
-    margin: 30px 0px;
-    gap: 200px;
-    justify-content: space-around;
-    align-items: center;
-    padding: 50px 0px;
+.videoHome {
+    padding: 150px 0px;
 }
 
-.imagenContentDouble {
-    width: 11.72vw;
-    background-color: var(--header-color);
-    padding: 5px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.frasePublicitaria {
+    margin-bottom: 150px;
 }
 
-.img-box-end {
-    width: 8vw;
+.frasePublicitaria p {
+    text-align: center;
+    font-size: 30px;
+    line-height: 39px;
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: var(--alt-blue);
+}
+
+.frasePublicitaria p a {
+    color: var(--alt-blue);
 }
 
 /* FOOTER */
@@ -215,12 +256,13 @@ hr {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 300px;
     padding: 20px;
 }
 
 .logoImgFooter {
-    width: 12vw;
+    width: 134px;
+    height: 34px;
 }
 
 .menuFooter {
@@ -232,39 +274,37 @@ hr {
 .menuFooter ul {
     display: flex;
     padding-top: 20px;
-    font-weight: bold;
     align-items: center;
     gap: 50px;
     font-size: 14px;
-}
-
-.menuFooter ul li:hover a:hover {
-    background-color: var(--alt-blue);
-    color: var(--alt-white);
+    font-weight: 600;
+    line-height: 18.2px;
+    font-family: 'Inter', sans-serif;
 }
 
 .menuFooter ul li a {
     text-decoration: none;
     color: var(--alt-black);
     padding: 5px;
-    border-radius: 5px;
 }
 
 .redesFooter {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .socialImgFooter {
-    width: 2vw;
+    width: 21px;
+    height: 21px;
 }
 
 .rightsFooter {
     text-align: center;
     font-weight: 500;
-    padding-bottom: 50px;
+    padding: 35px 0px;
+    color: #4B5563;
 }
 
 /* SOBRE NOSOTROS */
@@ -322,28 +362,6 @@ hr {
 
 .boxContent2 p {
     text-align: justify;
-}
-
-/* BS STYLES CAROUSEL */
-.card {
-    margin: 0 0.5em;
-    box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
-    border: none;
-    border-radius: 1%;
-}
-
-.carousel-inner {
-    padding-bottom: 1em;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    background-color: #e1e1e1;
-    width: 5vh;
-    height: 5vh;
-    border-radius: 50%;
-    top: 50%;
-    transform: translateY(-50%);
 }
 
 /* PROYECTOS */
