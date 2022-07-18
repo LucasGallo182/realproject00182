@@ -1,127 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Cerutti Studio - Proyectos</title>
+    <title>Ana Cerutti Studio - Productos</title>
 
-    <!-- Bootstrap -->
+    <!-- BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <!-- CSS Links -->
+    <!-- CSS -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <div class="gridContainer">
-        <!-- Nav -->
-        <nav class="navStyle">
-            <div class="firstRow">
-                <div class="firstColumn">
-                    <img src="../img/logo.png" alt="logo" class="logoImg">
-                </div>
-                <div class="secondColumn">
-                    <a href="#"><img src="../img/fb-icon.png" alt="fb" class="socialImg"></a>
-                    <a href="https://www.instagram.com/anacerutti_studio/"><img src="../img/ig-icon.png" alt="ig" class="socialImg"></a>
-                    <a href="#"><img src="../img/email-icon.png" alt="email" class="socialImg"></a>
-                </div>
+
+    <div class="container-fluid">
+        <!-- NavBar 1 -->
+        <nav class="navbar row pt-5 pb-5">
+            <div class="container-fluid justify-content-center">
+                <a href="#" class="navbar-brand textLogo">
+                    <img src="../img/logo.png" alt="logo">
+                </a>
             </div>
-            <div class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navLinks">
-                            <li class="nav-item">
-                                <a class="nav-link" href="../index.html">Inicio</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./proyectos.html">Proyectos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./nuestroproceso.html">Nuestro Proceso</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./sobrenosotros.html">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./donaciones.html">Donaciones</a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="d-flex align-items-center justify-content-end socialGap">
+                <a href="#"><img src="../img/fb-icon.png" alt="fb-icon" class="socialSize"></a>
+                <a href="#"><img src="../img/ig-icon.png" alt="ig-icon" class="socialSize"></a>
+                <a href="#"><img src="../img/gm-icon.png" alt="gm-icon" class="socialSizeGm"></a>
+            </div>
+        </nav>
+        <!-- NavBar 2 -->
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center align-items-center divLinks" id="navbarNav">
+                    <ul class="navbar-nav gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nuestro-proceso.html">Nuestro proceso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="./se-parte.html">Sé parte</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <!-- Section -->
-        <section class="sectionProyectos">
-            <div class="boxProyectos">
-                <h1>Esterno</h1>
-                <img src="../img/img01.png" alt="imagen1">
-                <div class="buttonProyecto">
-                    <a class="btnProyectos" href="./proyectos/esterno.html">Ver todo</a>
-                </div>
+                <!-- SECTION -->
+                <!-- 01 -->
+                <section class="row pt-5 pb-5 sectionProductos">
+                    <div class="container col-10 d-flex">
+                        <p>Esterno</p>
+                    </div>
+                    <div class="container col-12 d-flex justify-content-center">
+                        <img class="d-flex" src="../img/main-esterno.png" alt="esterno imagen">
+                    </div>
+                    <div class="container mt-4 col-10 d-flex justify-content-end">
+                        <div class="btnVerTodo">
+                            <a href="#">Ver todo</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- 02 -->
+                <section class="row pt-5 pb-5 sectionProductos">
+                    <div class="container col-10 d-flex">
+                        <p>Penumbra</p>
+                    </div>
+                    <div class="container col-12 d-flex justify-content-center">
+                        <img class="d-flex" src="../img/main-penumbra.png" alt="penumbra imagen">
+                    </div>
+                    <div class="container mt-4 col-10 d-flex justify-content-end">
+                        <div class="btnVerTodo">
+                            <a href="#">Ver todo</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- 03 -->
+                <section class="row pt-5 pb-5 sectionProductos">
+                    <div class="container col-10 d-flex">
+                        <p>Dentro</p>
+                    </div>
+                    <div class="container col-12 d-flex justify-content-center">
+                        <img class="d-flex" src="../img/main-dentro.png" alt="dentro imagen">
+                    </div>
+                    <div class="container mt-4 col-10 d-flex justify-content-end">
+                        <div class="btnVerTodo">
+                            <a href="#">Ver todo</a>
+                        </div>
+                    </div>
+                </section>
+                <!-- FOOTER -->
+                <footer class="row pt-5 pb-5 justify-content-center">
+                    <div class="col-10 container borderBottom"></div>
+                    <div class="row container justify-content-center pt-5">
+                        <div class="col-2">
+                            <img src="../img/logo.png" class="logoFooter">
+                        </div>
+                        <div class="col-6 linksFooter">
+                            <ul class="d-flex pt-2">
+                                <li>
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./productos.html">Productos</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./nuestro-proceso.html">Nuestro proceso</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./sobre-nosotros.html">Sobre nosotros</a>
+                                </li>
+                                <li>
+                                    <a class=" nav-link" href="./se-parte.html">Sé parte</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" col-2 d-flex justify-content-end align-items-center gap-3">
+                                        <a href="#"><img src="../img/fb-icon.png" alt="fb-icon" class="socialSize"></a>
+                                        <a href="#"><img src="../img/ig-icon.png" alt="ig-icon" class="socialSize"></a>
+                                        <a href="#"><img src="../img/gm-icon.png" alt="gm-icon" class="socialSizeGm"></a>
+                        </div>
+                    </div>
+                    <div class="row container text-center pt-5 textEnd">
+                        <p>&copy 2022 Ana Cerutti Studio. Todos los derechos reservados.</p>
+                    </div>
+                </footer>
             </div>
-            <div class="boxProyectos">
-                <h1>Penumbra</h1>
-                <img src="../img/img01.png" alt="imagen1">
-                <div class="buttonProyecto">
-                    <a class="btnProyectos" href="./proyectos/penumbra.html">Ver todo</a>
-                </div>
-            </div>
-            <div class="boxProyectos">
-                <h1>Dentro</h1>
-                <img src="../img/img01.png" alt="imagen1">
-                <div class="buttonProyecto">
-                    <a class="btnProyectos" href="./proyectos/dentro.html">Ver todo</a>
-                </div>
-            </div>
-            <div class="boxProyectos">
-                <h1>Personalizados</h1>
-                <img src="../img/img01.png" alt="imagen1">
-                <div class="buttonProyecto">
-                    <a class="btnProyectos" href="./proyectos/personalizados.html">Ver todo</a>
-                </div>
-            </div>
-        </section>
-        <!-- Footer -->
-        <footer class="footerStyle">
-            <div class="hrDiv">
-                <hr>
-            </div>
-            <div class="rowFooter">
-                <div class="logoFooter">
-                    <img src="../img/logo.png" alt="logo" class="logoImgFooter">
-                </div>
-                <div class="menuFooter">
-                    <ul>
-                        <li><a href="../index.html">Inicio</a></li>
-                        <li><a href="./proyectos.html">Proyectos</a></li>
-                        <li><a href="./nuestroproceso.html">Nuestro Proceso</a></li>
-                        <li><a href="./sobrenosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="./donaciones.html">Donaciones</a></li>
-                    </ul>
-                </div>
-                <div class="redesFooter">
-                    <a href="#"><img src="../img/fb-icon.png" alt="fb" class="socialImgFooter"></a>
-                    <a href="https://www.instagram.com/anacerutti_studio/"><img src="../img/ig-icon.png" alt="ig" class="socialImgFooter"></a>
-                    <a href="#"><img src="../img/email-icon.png" alt="email" class="socialImgFooter"></a>
-                </div>
-            </div>
-            <div class="rightsFooter">
-                <span>Todos los derechos reservados. Ana Cerutti Studio &copy 2022</span>
-            </div>
-        </footer>
-    </div>
+            <!-- BS Script -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                crossorigin="anonymous"></script>
 </body>
-<!-- Script Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
 
 </html>

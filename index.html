@@ -1,170 +1,202 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ana Cerutti Studio - Inicio</title>
+    <title>Ana Cerutti Studio</title>
 
-    <!-- Bootstrap -->
+    <!-- BS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
-    <!-- CSS Links -->
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="gridContainer">
+
+    <div class="container-fluid">
         <!-- Header -->
-        <header class="headerStyle">
-            <span>DISEÑAMOS OBJETOS TEXTILES SOSTENIBLES</span>
-        </header>
-        <!-- Nav -->
-        <nav class="navStyle">
-            <a href="./index.html">
-                <img src="./img/logo.png" alt="logo" class="logoImg">
-            </a>
-            <div class="secondColumn">
-                <a href="#"><img src="./img/fb-icon.png" alt="fb" class="socialImg"></a>
-                <a href="https://www.instagram.com/anacerutti_studio/" target="_blank" rel="noopener noreferrer">
-                    <img src="./img/ig-icon.png" alt="ig" class="socialImg">
-                </a>
-                <a href="#"><img src="./img/email-icon.png" alt="email" class="socialImg correo"></a>
+        <header class="row pt-3 pb-3">
+            <div class="col-lg-12 col-md-12 col-sm-12 text-center">
+                <span class="textHeader">DISEÑAMOS OBJETOS TEXTILES SOSTENIBLES</span>
             </div>
-            <div class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0 navLinks">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/productos.html">Productos</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/nuestroproceso.html">Nuestro Proceso</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/sobrenosotros.html">Sobre Nosotros</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./pages/donaciones.html">Donaciones</a>
-                            </li>
-                        </ul>
-                    </div>
+        </header>
+        <!-- NavBar 1 -->
+        <nav class="navbar row pt-5 pb-5">
+            <div class="container-fluid justify-content-center">
+                <a href="#" class="navbar-brand textLogo">Ana Cerutti <span>STUDIO</span></a>
+            </div>
+            <div class="d-flex align-items-center justify-content-end socialGap">
+                <a href="#"><img src="./img/fb-icon.png" alt="fb-icon" class="socialSize"></a>
+                <a href="#"><img src="./img/ig-icon.png" alt="ig-icon" class="socialSize"></a>
+                <a href="#"><img src="./img/gm-icon.png" alt="gm-icon" class="socialSizeGm"></a>
+            </div>
+        </nav>
+        <!-- NavBar 2 -->
+        <nav class="navbar navbar-dark navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center align-items-center divLinks" id="navbarNav">
+                    <ul class="navbar-nav gap-5">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nuestro-proceso.html">Nuestro proceso</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
+                        </li>
+                        <li class=" nav-item">
+                            <a class="nav-link" href="./pages/se-parte.html">Sé parte</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
-        <!-- Carousel -->
-        <div class="carouselStyle mb-3">
-            <div id="carouselExampleControls" class="carousel slide carousel-style" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="./img/carousel01.png" class="d-block w-100" alt="carousel-img-01">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/carousel02.png" class="d-block w-100" alt="carousel-img-02">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/carousel03.png" class="d-block w-100" alt="carousel-img-03">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="./img/carousel04.png" class="d-block w-100" alt="carousel-img-04">
-                    </div>
+        <!-- CARRUSEL -->
+        <div class="carouselStyle mb-5">
+                                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./img/carousel-home-01.png" class="d-block w-100"
+                                                    alt="carousel-img-01">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./img/carousel-home-02.png" class="d-block w-100"
+                                                    alt="carousel-img-02">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./img/carousel-home-03.png" class="d-block w-100"
+                                                    alt="carousel-img-03">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./img/carousel-home-04.png" class="d-block w-100"
+                                                    alt="carousel-img-04">
+                                            </div>
+                                        </div>
+                                        <button class="carousel-control-prev" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button"
+                                            data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </button>
+                                    </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-        <!-- Section -->
-        <div class="sectionStyle">
-            <div class="h1Style">
-                <h1>"Construimos prendas nuevas a partir de prendas existentes. <br>Nos gusta traer al presente cosas de
-                    otro tiempo <br>y darles un uso inesperado."</h1>
-            </div>
-            <main class="boxMain">
-                <div class="boxContent">
-                    <img src="./img/cuadrado01.png" alt="img-box-01">
-                    <div class="textImg">
-                        <h4>Nuestros valores</h4>
-                        <span>Los pilares de nuestro proceso creativo son la ética, la calidad, la estética y la
-                            sustentabilidad.</span>
-                        <a href="#">Ver más</a>
+                <!-- SECTION -->
+                <article class="row pt-5 pb-5">
+                    <div class="container col-10">
+                        <h1 class="text-center">“Construimos prendas nuevas a partir de prendas existentes.
+                            <br>Nos gusta traer al presente cosas de otro tiempo
+                            <br>y darles un uso inesperado”
+                        </h1>
                     </div>
+                </article>
+                <main class="row gap-5 pt-5 pb-5">
+                    <section class="row">
+                        <div class="container col-6 d-flex flex-column justify-content-center align-items-center">
+                            <img src="./img/square-home-01.png" alt="nuestro valores">
+                        </div>
+                        <div class="container col-4 d-flex flex-column justify-content-center align-items-center">
+                            <h3>Nuestros valores</h3>
+                            <p class="text-center">Los pilares de nuestro proceso creativo son la ética, la calidad, la
+                                estética y la
+                                sustentabilidad.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="container col-4 d-flex flex-column justify-content-center align-items-center">
+                            <h3>Proceso</h3>
+                            <p class="text-center">Queremos compartirte lo que nos mueve, y mostrarte cómo y dónde lo
+                                producimos.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+                        <div class="container col-6 d-flex flex-column justify-content-center align-items-center">
+                            <img src="./img/square-home-02.png" alt="nuestro valores">
+                        </div>
+                    </section>
+                    <section class="row">
+                        <div class="container col-6 d-flex flex-column justify-content-center align-items-center">
+                            <img src="./img/square-home-03.png" alt="nuestro valores">
+                        </div>
+                        <div class="container col-4 d-flex flex-column justify-content-center align-items-center">
+                            <h3>Donaciones</h3>
+                            <p class="text-center">Recibimos las prendas, telas y materiales que quieras donar. Formá
+                                parte de nuestro proyecto y de nuestra historia.</p>
+                            <a href="#">Ver más</a>
+                        </div>
+                    </section>
+                </main>
+                <!-- VIDEO -->
+                <div class="row d-flex justify-content-center pt-5 pb-5">
+                    <iframe width="1440" height="542" src="https://www.youtube.com/embed/is6O29gQde8"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
                 </div>
-                <div class="boxContent">
-                    <div class="textImg">
-                        <h4>Nuestro proceso</h4>
-                        <span>Queremos compartirte lo que nos mueve, y mostrarte cómo y dónde producimos.</span>
-                        <a href="#">Ver más</a>
+                <!-- ARTICLE TEXT INSTAGRAM -->
+                <article class="row pt-5 pb-5">
+                    <div class="container col-10 text-center">
+                        <h2>Te invitamos a seguir
+                            <br>nuestra tienda en <a href="">Instagram</a>
+                        </h2>
                     </div>
-                    <img src="./img/cuadrado02.png" alt="img-box-02" class="cuadradoImgResponsive">
-                </div>
-                <div class="boxContent">
-                    <img src="./img/cuadrado03.png" alt="img-box-03">
-                    <div class="textImg">
-                        <h4>Donaciones</h4>
-                        <span>Recibimos prendas, telas y materiales que quieras donar. Formá parte de nuestro proyecto y
-                            de
-                            nuestra historia.</span>
-                        <a href="#">Ver más</a>
+                </article>
+                <!-- FOOTER -->
+                <footer class="row pt-5 pb-5 justify-content-center">
+                    <div class="col-10 container borderBottom"></div>
+                    <div class="row container justify-content-center pt-5">
+                        <div class="col-2">
+                            <img src="./img/logo.png" class="logoFooter">
+                        </div>
+                        <div class="col-6 linksFooter">
+                            <ul class="d-flex pt-2">
+                                <li>
+                                    <a class="nav-link" href="#">Inicio</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./pages/productos.html">Productos</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./pages/nuestro-proceso.html">Nuestro proceso</a>
+                                </li>
+                                <li>
+                                    <a class="nav-link" href="./pages/sobre-nosotros.html">Sobre nosotros</a>
+                                </li>
+                                <li>
+                                    <a class=" nav-link" href="./pages/se-parte.html">Sé parte</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class=" col-2 d-flex justify-content-end align-items-center gap-3">
+                                        <a href="#"><img src="./img/fb-icon.png" alt="fb-icon" class="socialSize"></a>
+                                        <a href="#"><img src="./img/ig-icon.png" alt="ig-icon" class="socialSize"></a>
+                                        <a href="#"><img src="./img/gm-icon.png" alt="gm-icon" class="socialSizeGm"></a>
+                        </div>
                     </div>
-                </div>
-            </main>
-            <div class="videoHome">
-                <iframe class="iframeHome" src="https://player.vimeo.com/video/729470931?h=ad6ba5d8a5" width="1440" height="542"
-                    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+                    <div class="row container text-center pt-5 textEnd">
+                        <p>&copy 2022 Ana Cerutti Studio. Todos los derechos reservados.</p>
+                    </div>
+                </footer>
             </div>
-            <div class="frasePublicitaria">
-                <p>Te invitamos a seguir</p>
-                <p>nuestra tienda en <a href="https://www.instagram.com/anacerutti_studio/">Instagram</a></p>
-            </div>
-        </div>
-        <!-- Footer -->
-        <footer class="footerStyle">
-            <div class="hrDiv">
-                <hr>
-            </div>
-            <div class="rowFooter">
-                <div class="logoFooter">
-                    <img src="./img/logo.png" alt="logo" class="logoImgFooter">
-                </div>
-                <div class="menuFooter">
-                    <ul>
-                        <li><a href="./pages/productos.html">Productos</a></li>
-                        <li><a href="./pages/nuestroproceso.html">Nuestro Proceso</a></li>
-                        <li><a href="./pages/sobrenosotros.html">Sobre Nosotros</a></li>
-                        <li><a href="./pages/donaciones.html">Donaciones</a></li>
-                    </ul>
-                </div>
-                <div class="redesFooter">
-                    <a href="#"><img src="./img/fb-icon.png" alt="fb" class="socialImgFooter"></a>
-                    <a href="https://www.instagram.com/anacerutti_studio/"><img src="./img/ig-icon.png" alt="ig"
-                            class="socialImgFooter"></a>
-                    <a href="#"><img src="./img/email-icon.png" alt="email" class="socialImgFooter"></a>
-                </div>
-            </div>
-            <div class="rightsFooter">
-                <span>&copy 2022 Ana Cerutti Studio. Todos los derechos reservados.</span>
-            </div>
-        </footer>
-    </div>
+            <!-- BS Script -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+                crossorigin="anonymous"></script>
 </body>
-<!-- Script Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
-    </script>
 
 </html>
