@@ -194,11 +194,13 @@ article h2 {
     font-size: 30px;
     line-height: 150%;
     color: var(--bone-white);
+    position: relative;
+    left: 13%;
 }
 
 .sectionProductos img {
-    width: 1050px;
-    height: 506px;
+    width: 62.5vw;
+    height: 54vh;
 }
 
 .sectionProductos .btnVerTodo {
@@ -209,6 +211,8 @@ article h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    right: 13%;
 }
 
 .sectionProductos .btnVerTodo a {
@@ -245,6 +249,10 @@ article h2 {
     color: var(--bone-white);
 }
 
+.paddingTituloCatalogo {
+    padding-left: 50px;
+}
+
 .tituloCatalogo h6 {
     font-family: 'Noto Serif';
     font-style: normal;
@@ -261,8 +269,8 @@ article h2 {
 
 /* SOBRE NOSOTROS */
 .sectionNosotros img {
-    width: 428px;
-    height: 655px;
+    width: 28.5vw;
+    height: 73.4vh;
     border-radius: 20px;
 }
 
@@ -332,8 +340,12 @@ article h2 {
 }
 
 /* SOBRE NOSOTROS> CARRUSEL FINAL */
+.carruselFinal {
+    width: 1240px;
+}
+
 .carruselFinal img {
-    width: 1000px;
+    width: 1240px;
     height: 506px;
 }
 
