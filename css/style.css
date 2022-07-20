@@ -21,6 +21,11 @@ body {
 }
 
 /* HEADER */
+header div {
+    border-bottom: 1px solid white;
+    height: 49px;
+}
+
 header div .textHeader {
     font-weight: 600;
     font-size: 14px;
@@ -94,17 +99,26 @@ nav div .textLogo span {
     border-bottom: 1px solid var(--bone-white);
 }
 
+.navGap {
+    display: flex;
+    gap: 103px;
+}
+
 /* CARRUSEL */
 /* ---------- */
 
 /* SECTION */
-article div h1 {
-    font-family: 'Noto Serif';
+article div .pruebaTexto {
+    font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 300;
     font-size: 33px;
     line-height: 130%;
     color: var(--bone-white);
+}
+
+.sectionHome {
+    padding: 0px 20px;
 }
 
 section img {
@@ -113,7 +127,7 @@ section img {
 }
 
 section h3 {
-    font-family: 'Noto Serif';
+    font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -121,13 +135,14 @@ section h3 {
     color: var(--bone-white)
 }
 
-section p {
+.sectionHome p {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
     line-height: 150%;
     color: var(--bone-white);
+    padding: 0px 40px;
 }
 
 section a {
@@ -148,7 +163,7 @@ a:focus, a:active {
 
 /* ARTICLE TEXT INSTAGRAM */
 article h2 {
-    font-family: 'Noto Serif';
+    font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 300;
     font-size: 33px;
@@ -188,19 +203,17 @@ article h2 {
 
 /* PRODUCTOS > SECTION */
 .sectionProductos div p {
-    font-family: 'Noto Serif';
+    font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 150%;
     color: var(--bone-white);
-    position: relative;
-    left: 13%;
 }
 
 .sectionProductos img {
-    width: 62.5vw;
-    height: 54vh;
+    width: 1240px;
+    height: 506px;
 }
 
 .sectionProductos .btnVerTodo {
@@ -211,8 +224,6 @@ article h2 {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-    right: 13%;
 }
 
 .sectionProductos .btnVerTodo a {
@@ -232,7 +243,7 @@ article h2 {
 
 /* NUESTRO PROCESO */
 .sectionProceso h1 {
-    font-family: 'Noto Serif';
+    font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -253,8 +264,18 @@ article h2 {
     padding-left: 50px;
 }
 
+.paddingTituloCatalogo p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--bone-white);
+    padding-top: 19.25px;
+}
+
 .tituloCatalogo h6 {
-    font-family: 'Noto Serif';
+    font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -267,15 +288,23 @@ article h2 {
     height: 334.1px;
 }
 
+.gridCatalogo {
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    grid-template-rows: 25% 25% 25% 25%;
+    justify-content: center;
+    margin-bottom: 139px;
+}
+
 /* SOBRE NOSOTROS */
 .sectionNosotros img {
-    width: 28.5vw;
-    height: 73.4vh;
+    width: 510px;
+    height: 688px;
     border-radius: 20px;
 }
 
 .sectionNosotros h4 {
-    font-family: 'Noto Serif';
+    font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -294,7 +323,7 @@ article h2 {
 }
 
 .articleNosotros div h4 {
-    font-family: 'Noto Serif';
+    font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -313,9 +342,8 @@ article h2 {
 }
 
 /* SOBRE NOSOTROS> CARRUSEL ARTICLE */
-.carruselTarjetas img {
-    width: 400px;
-    height: 200px;
+.carruselTarjetas {
+    width: 100%;
 }
 
 /* SOBRE NOSOTROS> ARTICLE TEXT */
@@ -341,7 +369,7 @@ article h2 {
 
 /* SOBRE NOSOTROS> CARRUSEL FINAL */
 .carruselFinal {
-    width: 1240px;
+    width: 1250px;
 }
 
 .carruselFinal img {
@@ -351,17 +379,22 @@ article h2 {
 
 /* SE PARTE */
 .sectionSeParte h3 {
-    font-family: 'Noto Serif';
+    font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
     line-height: 150%;
     color: var(--bone-white);
+    margin-bottom: 48px;
 }
 
 .sectionSeParte img {
-    width: 450px;
-    height: 280px;
+    width: 556.56px;
+    height: 383.12px;
+}
+
+.articleSeParte {
+    margin-bottom: 71px;
 }
 
 .articleSeParte p, span {
@@ -372,10 +405,15 @@ article h2 {
     line-height: 150%;
     color: var(--bone-white);
     text-align: justify;
+    padding: 20px 0px;
+}
+
+.sectionSeParteProyecto {
+    margin-top: 197px;
 }
 
 .sectionSeParteProyecto h2 {
-    font-family: 'Noto Serif';
+    font-family: 'Noto Serif', serif;
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -397,3 +435,264 @@ article h2 {
     color: var(--bone-white);
 }
 
+/* ESTERNO */
+.sectionEsterno h2 {
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 150%;
+    color: var(--bone-white);
+    padding-bottom: 21px;
+}
+
+.sectionEsterno p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: justify;
+    color: var(--bone-white);
+}
+
+.esternoGrid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    padding-top: 67px;
+}
+
+.esternoGrid img {
+    width: 369px;
+    height: 474px;
+}
+
+.esternoGrid p {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--bone-white);
+}
+
+/* PENUMBRA */
+.sectionPenumbra h2 {
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 150%;
+    color: var(--bone-white);
+    padding-bottom: 21px;
+}
+
+.sectionPenumbra p, span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: justify;
+    color: var(--bone-white);
+}
+
+.penumbraGrid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    padding-top: 67px;
+    row-gap: 40px;
+}
+
+.penumbraGrid img {
+    width: 369px;
+    height: 474px;
+}
+
+.penumbraGrid p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--bone-white);
+}
+
+.textoPenumbra {
+    padding: 195px 0px;
+}
+
+.textoPenumbra p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--bone-white);
+}
+
+/* DENTRO */
+.sectionDentro h2 {
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 150%;
+    color: var(--bone-white);
+    padding-bottom: 21px;
+}
+
+.sectionDentro p, span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 150%;
+    text-align: justify;
+    color: var(--bone-white);
+}
+
+.dentroGrid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 100%;
+    padding-top: 67px;
+    padding-bottom: 186px;
+}
+
+.dentroGrid img {
+    width: 369px;
+    height: 474px;
+}
+
+/* PRODUCTOS INDIVIDUAL */
+.sectionProductosIndividual {
+    background-color: #EEEEEE;
+}
+
+.sectionProductosIndividual span {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 130%;
+    color: #998E81;
+}
+
+.sectionProductosIndividual h3 {
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 150%;
+    color: #000000;
+}
+
+.gridProductoIndividual {
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    gap: 72px;
+    padding-top: 28px;
+}
+
+.primeraColumnaGrid img {
+    width: 103px;
+    height: 133px;
+}
+
+.segundaColumnaGrid {
+    width: 505px;
+}
+
+.segundaColumnaGrid img {
+    width: 505px;
+    height: 639px;
+}
+
+.terceraColumnaGrid h3 {
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 150%;
+    color: #000000;
+    padding-bottom: 22px;
+}
+
+.terceraColumnaGrid p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #4B5563;
+    margin: 0;
+    padding-right: 40px;
+}
+
+.botonComprarIg {
+    margin-top: 31px;
+}
+
+.terceraColumnaGrid a {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    width: 216px;
+    padding: 10px 20px;
+    height: 40px;
+    left: 867px;
+    top: 635px;
+    background: #000000;
+    border-radius: 6px;
+}
+
+.metodos {
+    margin-top: 102px;
+}
+
+.gridPagoEnvio {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.mediosEnvio, .metodosPago {
+    padding: 0px 60px;
+}
+
+.mediosEnvio h3, .metodosPago h3 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 150%;
+    border-bottom: 1px solid black;
+}
+
+.mediosEnvio h5, .metodosPago h5 {
+    font-family: 'Noto Serif', serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 130%;
+}
+
+.mediosEnvio p, .metodosPago p {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 159%;
+}
+
+.mediosEnvio p strong{
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 159%;
+}
