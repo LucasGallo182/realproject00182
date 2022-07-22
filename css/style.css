@@ -696,3 +696,592 @@ article h2 {
     font-size: 20px;
     line-height: 159%;
 }
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+    
+    /* Todas las paginas */
+    .imgResponsive {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footerMenuResponsive {
+        font-size: 70%;
+    }
+
+    .divLinks {
+        height: max-content;
+    }
+
+    .divLinks a {
+        font-size: 10px;
+    }
+
+    /* PRODUCTOS > SECTION */
+    .sectionProductos div p {
+        font-size: 15px;
+    }
+
+    .sectionProductos img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Nuestro proceso */
+
+    .imagenCatalogo img {
+        width: 180px;
+        height: 180px;
+    }
+
+    /* SOBRE NOSOTROS */
+    .sectionNosotros img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .sectionNosotros h4 {
+        font-size: 20px;
+    }
+
+    .sectionNosotros p {
+        font-size: 12px;
+    }
+
+    /* Se parte */
+
+    .divSectionParteResponsive {
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .sectionSeParte img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* ESTERNO */
+
+    .esternoGrid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 33% 33% 33%;
+        padding-top: 47px;
+    }
+
+    /* Penumbra */
+
+    .textoPenumbra {
+        padding: 30px 0px;
+    }
+
+    .penumbraGrid img {
+        width: 200px;
+        height: 300px;
+    }
+
+    /* Dentro */
+
+    .dentroGrid img {
+        width: 200px;
+        height: 300px;
+    }
+
+    /* PRODUCTOS INDIVIDUAL */
+
+    .gridProductoIndividual {
+        gap: 38px;
+    }
+
+    .primeraColumnaGrid img {
+    width: 73px;
+    height: 103px;
+    }
+
+    .segundaColumnaGrid {
+        width: 305px;
+    }
+
+    .segundaColumnaGrid img {
+        width: 305px;
+        height: 439px;
+    }
+
+    .terceraColumnaGrid h3 {
+        width: 255px;
+        font-size: 20px;
+    }
+
+    .terceraColumnaGrid p {
+        font-size: 16px;
+        padding-right: 0px;
+    }
+
+    .botonComprarIg {
+        margin-top: 20px;
+    }
+
+    .terceraColumnaGrid a {
+        font-size: 11px;
+    }
+
+    .mediosEnvio h3, .metodosPago h3 {
+        font-size: 20px;
+        border-bottom: 1px solid black;
+    }
+
+    .mediosEnvio h5, .metodosPago h5 {
+        font-size: 20px;
+    }
+
+    .mediosEnvio p, .metodosPago p {
+        font-size: 16px;
+    }
+
+    .mediosEnvio p strong{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    
+    /* Header */
+
+    .navResponsiveHeader {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+            padding: 20px;
+        }
+        
+    .paddNavbar {
+        padding: 40px;
+        margin-left: 20px;
+    }
+
+    .socialGap {
+        padding-right: 120px;
+        padding-top: 20px;
+    }
+
+    nav div .textLogo {
+        font-size: 20px;
+    }
+    
+    nav div .textLogo span {
+        font-size: 15px;
+    }
+
+    .socialSize {
+        width: 50%;
+        height: 50%;
+    }
+
+    .socialSizeGm {
+        width: 50%;
+        height: 50%;
+    }
+
+    /* cuepo */
+
+    .sectionHome {
+        display: grid;
+        grid-template-rows: 200px 200px;
+    }
+
+    article div .pruebaTexto {
+        font-size: 15px;
+    }
+    
+    .sectionHome {
+        padding: 0px 20px;
+    }
+    
+    section h3 {
+        font-size: 15px;
+    }
+    
+    .sectionHome p {
+        font-size: 9px;
+        padding: 0px 0px;
+    }
+    
+    section a {
+        font-size: 17px;
+    }
+
+    article h2 {
+        font-size: 15px;
+    }
+
+    /* footer */
+
+    .divFooterResponsive {
+        justify-content: none;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 50px 50px 50px;
+    }
+
+    .footerRRSS {
+        width: 30px;
+        height: 30px;
+        justify-content: space-between;
+    }
+
+    .divFooterRRSS {
+        display: grid!important;
+        grid-template-columns: 33% 33% 33%;
+        margin-left: 140px;
+    }
+
+    .col-2 {
+        width: max-content;
+    }
+
+    .ulFooterResponsive {
+        display: grid!important;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+
+    .linksFooter ul {
+        justify-content:space-between;
+        gap: 50px;
+        padding: 0;
+    }
+
+    .divLogoFooter {
+        padding-left: 100px;
+    }
+
+    /* Nuestro proceso */
+
+    /* NUESTRO PROCESO */
+    .sectionProceso h1 {
+        font-size: 30px;
+    }
+
+    .sectionProceso p {
+        font-size: 16.5px;
+    }
+
+    .paddingTituloCatalogo p {
+        font-size: 16px;
+    }
+
+    .tituloCatalogo h6 {
+        font-size: 20px;
+    }
+
+    .imagenCatalogo img {
+        width: 333px;
+        height: 334.1px;
+    }
+
+    .gridCatalogo {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: max-content;
+    }
+
+    /* Sobre Nosotros */
+
+    .divSectionNosotrosResponsive {
+        display: grid !important;
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+    }
+
+    .sectionNosotros img {
+        width: 400px;
+        height: 400px;
+    }
+
+    .col-5 {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* ESTERNO */
+    .sectionEsterno h2 {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    .sectionEsterno p {
+        font-size: 14px;
+        line-height: 100%;
+    }
+
+    .esternoGrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 20% 20% 20% 20% 20%;
+        padding-top: 67px;
+    }
+
+    .esternoGrid img {
+        width: 369px;
+        height: 474px;
+    }
+
+    .esternoGrid p {
+        font-size: 15px;
+        line-height: 80%;
+    }
+
+    /* PENUMBRA */
+
+    .penumbraGrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 11% 11% 11% 11% 11% 11% 11% 11% 11%;
+        padding-top: 10px;
+        row-gap: 10px;
+    }
+
+    .penumbraGrid img {
+        width: 369px;
+        height: 474px;
+    }
+
+    /* Dentro */
+    .dentroGrid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 33% 33% 33%;
+        padding-top: 67px;
+        padding-bottom: 186px;
+    }
+    
+    .dentroGrid img {
+        width: 369px;
+        height: 474px;
+    }
+
+    /* PRODUCTOS INDIVIDUAL */
+
+    .gridProductoIndividual {
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 30% 60%;
+        gap: 10px;
+    }
+
+    .primeraColumnaGrid {
+        flex-direction: row !important;
+    }
+
+    .primeraColumnaGrid img {
+        width: 80px;
+        height: 100px;
+    }
+
+    .segundaColumnaGrid {
+        width: 100%;
+        height: 100%;
+    }
+
+    .segundaColumnaGrid img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .terceraColumnaGrid a {
+        font-size: 15px;
+        line-height: 20px;
+        width: 216px;
+        padding: 10px 20px;
+        height: 40px;
+        left: 867px;
+        top: 635px;
+        background: #000000;
+        border-radius: 6px;
+    }
+
+    .metodos {
+        margin-top: 102px;
+    }
+
+    .gridPagoEnvio {
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 40%;
+        
+    }
+
+    .mediosEnvio, .metodosPago {
+        padding: 0px 60px;
+    }
+
+    .mediosEnvio h3, .metodosPago h3 {
+        font-size: 26px;
+    }
+
+    .mediosEnvio h5, .metodosPago h5 {
+        font-size: 24px;
+    }
+
+    .mediosEnvio p, .metodosPago p {
+        font-size: 16px;
+    }
+
+    .mediosEnvio p strong{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+        /* Header */
+
+        header div .textHeader {
+            font-weight: 600;
+            font-size: 10px;
+            line-height: 18.2px;
+            color: var(--alt-white);
+        }
+
+        .navResponsiveHeader {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 50% 50%;
+            padding: 20px;
+        }
+        
+        .paddNavbar {
+            padding: 30px;
+            margin-left: 20px;
+        }
+
+        .socialGap {
+            padding-right: 80px;
+            padding-top: 80px;
+        }
+
+        /* Footer */        
+        .divFooterResponsive {
+            grid-template-columns: 100%;
+            grid-template-rows: 50px 280px 50px;
+            justify-items: center;
+        }
+    
+        .footerRRSS {
+            width: 30px;
+            height: 30px;
+            justify-items: start;
+            margin-right: 25px;
+        }
+    
+        .ulFooterResponsive {
+            display: flex !important;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        .linksFooter ul {
+            gap: 35px;
+            padding: 0;
+        }
+
+        .logoFooter {
+            justify-content: center;
+            align-items: center;
+            width: 80%;
+            height: 90%;
+        }
+
+        .divLogoFooter {
+            padding-left: 50px;
+            display: flex;
+            justify-content: flex-start
+        }
+
+        .divFooterRRSS {
+            margin-left: 85px;
+        }
+
+        .carruselFinal img {
+            width: 300px;
+            height: 200px;
+        }
+
+        /* Nuestro Proceso */
+
+        .imagenCatalogo img {
+            width: 233px;
+            height: 234.1px;
+        }
+
+        /* Sobre Nosotros */
+
+        .sectionNosotros {
+            display: grid;
+            justify-content: center;
+            margin-right: 25px;
+        }
+        
+        .sectionNosotros img {
+            width: 280px;
+            height: 280px;
+            margin-left: 35px;
+        }
+
+        .articleNosotros div p {
+            font-size: 12px;
+        }
+
+        .articleText p {
+            font-size: 12px;
+        }
+
+        /* Esterno */
+        
+        .esternoGrid img {
+            width: 269px;
+            height: 374px;
+        }
+
+        /* Penumbra */
+
+        .penumbraGrid img {
+            width: 269px;
+            height: 374px;
+        }
+
+        /* Dentro */
+
+        .dentroGrid img {
+            width: 269px;
+            height: 374px;
+        }
+
+        /* Producto */
+
+        .primeraColumnaGrid img {
+            width: 50px;
+            height: 80px;
+        }
+
+        .gridPagoEnvio {
+            grid-template-columns: 100%;
+            grid-template-rows: 70% 30%;   
+        }
+
+        /* Se parte */
+        .sectionSeParte h3 {
+            font-size: 18px;
+        }
+
+        .articleSeParte p {
+            font-size: 12px;
+        }
+
+        .sectionSeParteProyecto h2 {
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .sectionSeParteProyecto p {
+            font-size: 12px;
+        }
+}
